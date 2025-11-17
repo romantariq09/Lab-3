@@ -27,4 +27,33 @@ function ToyCar(model, manufacturer, scale, color, material, length, weight, doo
     };
 }
 
+const form = document.getElementById("carForm");
+const display = document.getElementById("carDisplay");
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    let car = new ToyCar(
+        document.getElementById("model").value,
+        document.getElementById("manufacturer").value,
+        document.getElementById("scale").value,
+        document.getElementById("color").value,
+        document.getElementById("material").value,
+        document.getElementById("length").value,
+        document.getElementById("weight").value,
+        document.getElementById("doors").value,
+        document.getElementById("wheels").value,
+        document.getElementById("price").value
+    );
+
+    let card = document.createElement("div");
+    card.classList.add("car-card");
+
+    card.innerHTML = `
+        <h3>${car.model}</h3>
+        <p>${car.describe()}</p>
+    `;
+
+    display.appendChild(card);
+});
 
