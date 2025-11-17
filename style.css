@@ -34,3 +34,23 @@ form button {
     border: none;
     cursor: pointer;
 }
+
+#carDisplay {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.car-card {
+    background: white;
+    padding: 15px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px grey;
+}
+
+.car-card h3 {
+    margin-top: 0;
+}
