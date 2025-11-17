@@ -7,3 +7,30 @@ body {
 h1 {
     text-align: center;
 }
+
+.form-section {
+    background: #fff;
+    padding: 20px;
+    width: 350px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #999;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input, form select, form button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+form button {
+    background: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
